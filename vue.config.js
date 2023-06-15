@@ -1,3 +1,3 @@
 module.exports ={
-    publicPath: '/webshop/'
+    publicPath: '/Toys_Store/'
 }
