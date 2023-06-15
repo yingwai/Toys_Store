@@ -194,6 +194,8 @@ export default {
       this.SaveBuy.push(this.SaveProd[id])
 
       localStorage.setItem("SaveBuy", JSON.stringify(this.SaveBuy));
+
+      this.$store.state.nCountToysCorf += 1;
     }
   },
   mounted() {
@@ -269,6 +271,7 @@ export default {
 
 <style lang="scss">
 .main {
+  z-index: 1000;
   margin: 0 150px;
 
   .content {

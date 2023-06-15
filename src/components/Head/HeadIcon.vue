@@ -4,7 +4,7 @@
     <input type="text" class="btn_search_lock" v-else readonly />
     <i class="fas fa-search" @click="fSearch"></i>
     <i class="fas fa-shopping-basket" @click="this.$router.push('/Corf')"
-      >({{ count }})</i
+      >({{ this.$store.state.nCountToysCorf }})</i
     >
     <i class="fas fa-user" @click="fAuth"></i>
   </div>
@@ -16,7 +16,6 @@ export default {
     return {
       SaveBuy: JSON.parse(localStorage.getItem("SaveBuy")),
       btnVisible: false,
-      count: 0,
       search: "",
     };
   },
@@ -50,7 +49,7 @@ export default {
   },
   mounted() {
     if (this.SaveBuy) {
-      this.count = this.SaveBuy.length
+      this.$store.state.nCountToysCorf = this.SaveBuy.length
     }
   }
 };

@@ -84,6 +84,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.page_slider {
+  position: relative;
+  z-index: 5;
+}
 .container {
   margin: 30px auto;
   position: relative;

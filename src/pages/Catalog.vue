@@ -51,12 +51,7 @@
 </template>
 
 <script>
-// import HeadList from "@/components/Head/HeadList.vue";
-
 export default {
-  // components: {
-  //   HeadList,
-  // },
   data() {
     return {
       SaveProd: JSON.parse(localStorage.getItem("SaveProd")),
@@ -175,6 +170,8 @@ export default {
       this.SaveBuy.push(this.SaveProd[id])
 
       localStorage.setItem("SaveBuy", JSON.stringify(this.SaveBuy));
+
+      this.$store.state.nCountToysCorf += 1;
     }
   },
   mounted() {

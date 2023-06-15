@@ -27,11 +27,11 @@
 </template>
 
 <script>
-import Profile from "@/components/pages/UsersPage/Profile.vue";
-import History from "@/components/pages/UsersPage/History.vue";
-import Address from "@/components/pages/UsersPage/Address.vue";
-import Bonuses from "@/components/pages/UsersPage/Bonuses.vue";
-import Contacts from "@/components/pages/UsersPage/Contacts.vue";
+import Profile from "@/pages/UsersPage/Profile.vue";
+import History from "@/pages/UsersPage/History.vue";
+import Address from "@/pages/UsersPage/Address.vue";
+import Bonuses from "@/pages/UsersPage/Bonuses.vue";
+import Contacts from "@/pages/UsersPage/Contacts.vue";
 
 export default {
   components: {

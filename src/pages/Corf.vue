@@ -101,6 +101,7 @@ export default {
 
       localStorage.setItem("SaveBuy", JSON.stringify(this.SaveBuy));
 
+      this.$store.state.nCountToysCorf += 1;
       location.reload();
     },
     fDelete(id) {
@@ -115,6 +116,7 @@ export default {
 
       localStorage.setItem("SaveBuy", JSON.stringify(this.SaveBuy));
 
+      this.$store.state.nCountToysCorf += 1;
       location.reload();
     },
     fIncrBuy(id) {
@@ -122,6 +124,7 @@ export default {
 
       localStorage.setItem("SaveBuy", JSON.stringify(this.SaveBuy));
 
+      this.$store.state.nCountToysCorf -= 1;
       location.reload();
     },
     fPay() {
@@ -241,7 +244,7 @@ export default {
 
             h3 {
               transition: color 0.2s ease-in;
-              
+
               &:hover {
                 color: #6ebcda;
               }

@@ -24,43 +24,46 @@
 
 <script>
 export default {
-    name: 'modal-menu',
+  name: "modal-menu",
 
-    methods: {
-        HideModalMenu() {
-          this.$emit('HideModal')
-        },
+  methods: {
+    HideModalMenu() {
+      this.$emit("HideModal");
+    },
 
-        fMainMenu() {
-          this.$router.push('/')
-          this.$emit('HideModal')
-        },
+    fMainMenu() {
+      this.$router.push("/");
+      this.$emit("HideModal");
+    },
 
-        fCatalogMenu() {
-          this.$router.push('/Catalog')
-          this.$emit('HideModal')
-        },
+    fCatalogMenu() {
+      this.$router.push("/Catalog");
+      this.$emit("HideModal");
+    },
 
-        fAboutShop() {
-          this.$router.push('/AboutShop')
-          this.$emit('HideModal')
-        },
+    fAboutShop() {
+      this.$router.push("/AboutShop");
+      this.$emit("HideModal");
+    },
 
-        fUserRoomMenu() {
-          this.$router.push('/UsersRoom')
-          this.$emit('HideModal')
-        },
+    fUserRoomMenu() {
+      this.$router.push("/UsersRoom");
+      this.$emit("HideModal");
+    },
 
-        fBlogMenu() {
-          this.$router.push('/Blog')
-          this.$emit('HideModal')
-        },
-    }
+    fBlogMenu() {
+      this.$router.push("/Blog");
+      this.$emit("HideModal");
+    },
+  },
 };
 </script>
 
 <style lang="scss" scoped>
 .modal___menu {
+  position: relative;
+  z-index: 10;
+
   .modal___bg {
     background-color: rgba(0, 0, 0, 0.5);
     position: fixed;

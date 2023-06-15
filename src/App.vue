@@ -2,16 +2,19 @@
   <div>
     <div class="app_block">
       <Head @OpenModal="OpenModalMenu" />
-      <HeadList />
-      <transition name="fade">
-        <modal-menu v-if="ModalMenuVisible" @HideModal="HideModalMenu">
-          <ModalMenu />
-        </modal-menu>
-      </transition>
-      <router-view></router-view>
+      
+      <div class="main_container">
+        <HeadList />
+        <transition name="fade">
+          <modal-menu v-if="ModalMenuVisible" @HideModal="HideModalMenu">
+            <ModalMenu />
+          </modal-menu>
+        </transition>
+        <router-view></router-view>
 
-      <div class="btn_topScroll" @click="fSrollTop">
-        <i class="fas fa-arrow-up icon"></i>
+        <div class="btn_topScroll" @click="fSrollTop">
+          <i class="fas fa-arrow-up icon"></i>
+        </div>
       </div>
 
       <Footer class="app_footer" />
@@ -456,6 +459,15 @@ export default {
   }
 }
 
+.app_block {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.main_container {
+  flex: 1;
+}
+
 .app_footer {
   margin-top: auto;
 }
@@ -499,7 +511,7 @@ export default {
   color: white;
   background-color: rgb(226, 106, 36);
   opacity: 0;
-  z-index: 1000;
+  z-index: 9;
 
   .icon {
     display: flex;

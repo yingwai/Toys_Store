@@ -48,10 +48,10 @@
 </template>
 
 <script>
-import Users from "@/components/pages/AdminPage/Users.vue";
-import Products from "@/components/pages/AdminPage/Products.vue";
-import BlogSetting from "@/components/pages/AdminPage/BlogSetting.vue";
-import SlaiderImg from "@/components/pages/AdminPage/SlaiderImg.vue";
+import Users from "@/pages/AdminPage/Users.vue";
+import Products from "@/pages/AdminPage/Products.vue";
+import BlogSetting from "@/pages/AdminPage/BlogSetting.vue";
+import SlaiderImg from "@/pages/AdminPage/SlaiderImg.vue";
 
 export default {
   components: {
