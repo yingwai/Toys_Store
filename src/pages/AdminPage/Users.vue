@@ -56,7 +56,7 @@ export default {
         if (this.activeAccount.id === this.DataUsers[id].id) {
           localStorage.removeItem("isAuth");
           localStorage.removeItem("activeAccount");
-          this.$router.push("/LogRoom");
+          this.$router.push("/Toys_Store/LogRoom");
 
           this.$store.state.isAuth = null;
 

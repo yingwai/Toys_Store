@@ -32,27 +32,27 @@ export default {
     },
 
     fMainMenu() {
-      this.$router.push("/");
+      this.$router.push("/Toys_Store/");
       this.$emit("HideModal");
     },
 
     fCatalogMenu() {
-      this.$router.push("/Catalog");
+      this.$router.push("/Toys_Store/Catalog");
       this.$emit("HideModal");
     },
 
     fAboutShop() {
-      this.$router.push("/AboutShop");
+      this.$router.push("/Toys_Store/AboutShop");
       this.$emit("HideModal");
     },
 
     fUserRoomMenu() {
-      this.$router.push("/UsersRoom");
+      this.$router.push("/Toys_Store/UsersRoom");
       this.$emit("HideModal");
     },
 
     fBlogMenu() {
-      this.$router.push("/Blog");
+      this.$router.push("/Toys_Store/Blog");
       this.$emit("HideModal");
     },
   },

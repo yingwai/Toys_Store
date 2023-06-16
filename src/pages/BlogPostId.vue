@@ -2,9 +2,9 @@
   <div class="blogpostid">
     <div class="history">
       <ul>
-        <li @click="$router.push('/')">Главная</li>
+        <li @click="$router.push('/Toys_Store/')">Главная</li>
         /
-        <li @click="$router.push('/Blog')">Блог</li>
+        <li @click="$router.push('/Toys_Store/Blog')">Блог</li>
         /
         <li>{{ this.SaveBlogs[this.$route.params.id].title }}</li>
       </ul>

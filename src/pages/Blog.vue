@@ -2,7 +2,7 @@
   <div class="blog">
     <div class="history">
       <ul>
-        <li @click="$router.push('/')">Главная</li>
+        <li @click="$router.push('/Toys_Store/')">Главная</li>
         /
         <li>Блог</li>
       </ul>
@@ -17,7 +17,7 @@
             <img :src="post.img" alt="img">
           </div>
           <div class="post_date">{{ post.dateОfСreation }}</div>
-          <div class="post_title" @click="$router.push(`/BlogPostId/${post.id}`)">{{ post.title }}</div>
+          <div class="post_title" @click="$router.push(`/Toys_Store/BlogPostId/${post.id}`)">{{ post.title }}</div>
         </div>
       </div>
     </div>

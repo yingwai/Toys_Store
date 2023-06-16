@@ -2,7 +2,7 @@
   <div class="page_search">
     <div class="history">
       <ul>
-        <li @click="this.$router.push('/')">Главная</li>
+        <li @click="this.$router.push('/Toys_Store/')">Главная</li>
         /
         <li>Поиск</li>
       </ul>
@@ -30,7 +30,7 @@
           <div class="prod_block" v-for="prod in prods" :key="prod.id">
             <div
               style="height: 500px"
-              @click="$router.push(`/ProductId/${prod.id}`)"
+              @click="$router.push(`/Toys_Store/ProductId/${prod.id}`)"
             >
               <div class="prod_img"><img :src="prod.img" /></div>
               <div class="prod_title">

@@ -91,7 +91,7 @@ export default {
                 regPass.value = ``
                 regConfirm.value = ``
 
-                this.$router.push("/UsersRoom");
+                this.$router.push("/Toys_Store/UsersRoom");
               } else {
                 error.innerHTML = "Пароль различается";
               }

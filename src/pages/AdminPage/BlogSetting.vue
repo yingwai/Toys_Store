@@ -46,7 +46,7 @@
           </div>
 
           <div class="blog_btn">
-            <i class="far fa-folder icon" @click="$router.push(`/BlogPostId/${blog.id}`)"></i>
+            <i class="far fa-folder icon" @click="$router.push(`/Toys_Store/BlogPostId/${blog.id}`)"></i>
             <i class="fas fa-pencil-alt icon" @click="fUpdateBlog(blog.id)"></i>
             <i class="far fa-trash-alt icon" @click="fDeleteBlog(blog.id)"></i>
           </div>

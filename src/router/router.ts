@@ -13,16 +13,16 @@ import Search from "@/pages/Search.vue"
 const router = createRouter({
     history: createWebHistory(),
     routes: [
-        { path: '/', component: Main },
-        { path: '/Catalog', component: Catalog },
-        { path: '/LogRoom', component: LogRoom },
-        { path: '/UsersRoom', component: UsersRoom },
-        { path: '/AboutShop', component: AboutShop },
-        { path: '/Blog', component: Blog },
-        { path: '/BlogPostId/:id', component: BlogPostId },
-        { path: '/ProductId/:id', component: ProductId },
-        { path: '/Corf', component: Corf },
-        { path: '/Search', component: Search },
+        { path: '/Toys_Store/', component: Main },
+        { path: '/Toys_Store/Catalog', component: Catalog },
+        { path: '/Toys_Store/LogRoom', component: LogRoom },
+        { path: '/Toys_Store/UsersRoom', component: UsersRoom },
+        { path: '/Toys_Store/AboutShop', component: AboutShop },
+        { path: '/Toys_Store/Blog', component: Blog },
+        { path: '/Toys_Store/BlogPostId/:id', component: BlogPostId },
+        { path: '/Toys_Store/ProductId/:id', component: ProductId },
+        { path: '/Toys_Store/Corf', component: Corf },
+        { path: '/Toys_Store/Search', component: Search },
     ],
 })
 

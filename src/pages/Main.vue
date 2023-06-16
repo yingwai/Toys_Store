@@ -10,7 +10,7 @@
         <div class="prod_block" v-for="prod in prod1" :key="prod.id">
           <div
             style="height: 500px"
-            @click="$router.push(`/ProductId/${prod.id}`)"
+            @click="$router.push(`/Toys_Store/ProductId/${prod.id}`)"
           >
             <div class="prod_img"><img :src="prod.img" /></div>
             <div class="prod_title">
@@ -32,7 +32,7 @@
         <div class="prod_block" v-for="prod in prod2" :key="prod.id">
           <div
             style="height: 500px"
-            @click="$router.push(`/ProductId/${prod.id}`)"
+            @click="$router.push(`/Toys_Store/ProductId/${prod.id}`)"
           >
             <div class="prod_img"><img :src="prod.img" /></div>
             <div class="prod_title">
@@ -54,7 +54,7 @@
         <div class="prod_block" v-for="prod in prod3" :key="prod.id">
           <div
             style="height: 500px"
-            @click="$router.push(`/ProductId/${prod.id}`)"
+            @click="$router.push(`/Toys_Store/ProductId/${prod.id}`)"
           >
             <div class="prod_img"><img :src="prod.img" /></div>
             <div class="prod_title">
@@ -111,7 +111,7 @@
           <div class="stock_img"><img :src="stock.img" /></div>
           <div
             class="stock_title"
-            @click="$router.push(`/BlogPostId/${stock.id}`)"
+            @click="$router.push(`/Toys_Store/BlogPostId/${stock.id}`)"
           >
             {{ stock.title }}
           </div>

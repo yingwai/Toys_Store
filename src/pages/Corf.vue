@@ -2,7 +2,7 @@
   <div class="corf_page">
     <div class="history">
       <ul>
-        <li @click="$router.push('/')">Главная</li>
+        <li @click="$router.push('/Toys_Store/')">Главная</li>
         /
         <li>Корзина</li>
       </ul>
@@ -19,7 +19,7 @@
 
             <div class="corf_info">
               <div class="corf_head">
-                <h3 @click="$router.push(`/ProductId/${corf.count[0].id}`)">
+                <h3 @click="$router.push(`/Toys_Store/ProductId/${corf.count[0].id}`)">
                   {{ corf.count[0].title }}
                 </h3>
 
@@ -63,7 +63,7 @@
       <div class="prod_block" v-for="prod in prods" :key="prod.id">
         <div
           style="height: 500px"
-          @click="$router.push(`/ProductId/${prod.id}`)"
+          @click="$router.push(`/Toys_Store/ProductId/${prod.id}`)"
         >
           <div class="prod_img"><img :src="prod.img" /></div>
           <div class="prod_title">

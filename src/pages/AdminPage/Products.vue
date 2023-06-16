@@ -223,7 +223,7 @@
           <div class="prod_btn">
             <i
               class="far fa-folder icon"
-              @click="$router.push(`/ProductId/${prod.id}`)"
+              @click="$router.push(`/Toys_Store/ProductId/${prod.id}`)"
             ></i>
             <i class="fas fa-pencil-alt icon" @click="fUpdateProd(prod.id)"></i>
             <i class="far fa-trash-alt icon" @click="fDeleteProd(prod.id)"></i>

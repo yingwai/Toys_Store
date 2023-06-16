@@ -80,7 +80,7 @@ export default {
             localStorage.setItem("isAuth", true);
             this.$store.state.isAuth = true;
 
-            this.$router.push("/UsersRoom");
+            this.$router.push("/Toys_Store/UsersRoom");
 
             error.innerHTML = "";
           } else {

@@ -16,7 +16,7 @@ export default {
   },
   methods: {
     fClickLogo() {
-      this.$router.push('/')
+      this.$router.push('/Toys_Store/')
       window.scrollTo(0,0)
     }
   },

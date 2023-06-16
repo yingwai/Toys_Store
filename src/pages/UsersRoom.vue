@@ -55,7 +55,7 @@ export default {
       if (this.codePage === 6) {
         localStorage.removeItem("isAuth");
         localStorage.removeItem("activeAccount");
-        this.$router.push("/LogRoom");
+        this.$router.push("/Toys_Store/LogRoom");
 
         this.$store.state.isAuth = null;
       }

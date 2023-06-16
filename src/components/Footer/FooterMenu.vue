@@ -3,10 +3,10 @@
     <div class="menu">
       <div class="menu___navigation">
         <ul>
-          <li @click="$router.push('/Catalog')">Каталог</li>
-          <li @click="$router.push('/AboutShop')">О магазине</li>
-          <li @click="$router.push('/UsersRoom')">Личный кабинет</li>
-          <li @click="$router.push('/Blog')">Блог</li>
+          <li @click="$router.push('/Toys_Store/Catalog')">Каталог</li>
+          <li @click="$router.push('/Toys_Store/AboutShop')">О магазине</li>
+          <li @click="$router.push('/Toys_Store/UsersRoom')">Личный кабинет</li>
+          <li @click="$router.push('/Toys_Store/Blog')">Блог</li>
         </ul>
       </div>
 

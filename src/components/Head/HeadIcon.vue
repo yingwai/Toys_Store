@@ -3,7 +3,7 @@
     <input type="text" class="btn_search" v-if="btnVisible" autofocus v-on:keydown.enter="fSearch"/>
     <input type="text" class="btn_search_lock" v-else readonly />
     <i class="fas fa-search" @click="fSearch"></i>
-    <i class="fas fa-shopping-basket" @click="this.$router.push('/Corf')"
+    <i class="fas fa-shopping-basket" @click="this.$router.push('/Toys_Store/Corf')"
       >({{ this.$store.state.nCountToysCorf }})</i
     >
     <i class="fas fa-user" @click="fAuth"></i>
@@ -22,9 +22,9 @@ export default {
   methods: {
     fAuth() {
       if (this.$store.state.isAuth) {
-        this.$router.push("/UsersRoom");
+        this.$router.push("/Toys_Store/UsersRoom");
       } else {
-        this.$router.push("/LogRoom");
+        this.$router.push("/Toys_Store/LogRoom");
       }
     },
     fSearch() {
@@ -40,7 +40,7 @@ export default {
 
           this.btnVisible = false;
 
-          this.$router.push("/Search");
+          this.$router.push("/Toys_Store/Search");
         }
       } else {
         this.btnVisible = true;

@@ -35,7 +35,7 @@ export default {
       if (this.$route.href === '/Catalog') {
         location.reload()
       } else {
-        this.$router.push("/Catalog");
+        this.$router.push("/Toys_Store/Catalog");
       }
 
       if (value === "1") {

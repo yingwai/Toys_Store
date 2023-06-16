@@ -2,9 +2,9 @@
   <div class="productId">
     <div class="history">
       <ul>
-        <li @click="$router.push('/')">Главная</li>
+        <li @click="$router.push('/Toys_Store/')">Главная</li>
         /
-        <li @click="$router.push('/Catalog')">Каталог</li>
+        <li @click="$router.push('/Toys_Store/Catalog')">Каталог</li>
         /
         <li>{{ this.SaveProd[this.$route.params.id].title }}</li>
       </ul>
@@ -409,7 +409,7 @@ export default {
 
         this.count += 1;
       } else {
-        this.$router.push("/Corf");
+        this.$router.push("/Toys_Store/Corf");
       }
     },
     fAddBuy(id) {

@@ -2,7 +2,7 @@
   <div class="aboutshop">
     <div class="history">
       <ul>
-        <li @click="$router.push('/')">Главная</li>
+        <li @click="$router.push('/Toys_Store/')">Главная</li>
         /
         <li>О магазине</li>
       </ul>
